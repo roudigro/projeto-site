@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Neue';
+    src: url('/fontes/NeueHaasUnica-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Melodybold';
+    src: url('/fontes/BLMelody-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Uncut';
+    src: url('/fontes/Uncut-Sans-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Buduj';
+    src: url('/fontes/BudujSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Acumin';
+    src: url('/fontes/Acumin-RPro.otf');
+}
+
+:root {
+    --cor0: #FFFFFD;
+    --cor1: #0A100D;
+    --cor2: #000000;
+    --cor3: #f5f5f595;
+    --cor4: #3B00D1;
+
+    --texto: 'Neue';
+    --header: 'Buduj';
+    --titulo: 'Melodybold';
+    --subt: 'Uncut';
+    --nav: 'Acumin';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+header {
+    min-height: 150px;
+    text-align: center;
+    background-image: linear-gradient(to right, #F7E414, #F74920, #A80874);
+}
+
+header > h1 {
+    font-family: var(--header);
+    color: var(--cor1);
+    font-size: 4em;
+    padding-top: 25px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.403);
+    border-radius: 2px;
+}
+
+main > article > h1 {
+    font-family: var(--titulo);
+    text-align: center;
+    padding: 20px;
+}
+
+main > article > h2 {
+    margin: 20px;
+    font-family: var(--subt);
+    color: #070606;
+    text-align: right;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+
+}
+
+nav {
+    padding: 10px;
+    background-color: var(--cor1);
+    text-align: center;
+    font-family: var(--nav);
+}
+
+nav > a {
+    color: var(--cor0);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    border-radius: 3%;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+}
+
+p {
+    font-family: var(--texto);
+    font-weight: lighter;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font: 1em;
+    line-height: 2em;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: #FFFFFD;
+}
